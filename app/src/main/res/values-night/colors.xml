@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- black background if mode night on -->
+    <color name="blue">#FF000000</color>
+    <!-- black background if mode night on-->
+    <color name="white">#FFFFFF</color>
+    <!-- white text if mode night on-->
+    <color name="text_black">#FFFFFF</color>
+</resources>
