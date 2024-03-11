@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="12sp"
+    android:padding="12dp"
     tools:context=".SettingsActivity">
 
     <LinearLayout
@@ -14,22 +14,22 @@
 
         <ImageButton
             android:id="@+id/backArrow"
-            android:layout_width="16dp"
-            android:layout_height="16dp"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_gravity="center_vertical"
+            android:adjustViewBounds="true"
             android:backgroundTint="@color/white"
-            android:src="@drawable/ic_arrow_back"
             android:foreground="?attr/selectableItemBackground"
-            android:adjustViewBounds="true"/>
+            android:src="@drawable/ic_arrow_back" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
-            android:text="@string/settings"
+            android:layout_marginStart="12dp"
+            android:text="@string/text_settings"
             android:textColor="@color/text_black"
-            android:textSize="@dimen/main_text_size"
-            android:layout_marginStart="12dp"/>
+            android:textSize="@dimen/main_text_size" />
 
     </LinearLayout>
 
@@ -41,17 +41,17 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/height_settings_text"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:text="@string/text_dark_mode"
                 android:textColor="@color/text_black"
-                android:textSize="@dimen/second_screen_text_size"/>
+                android:textSize="@dimen/second_screen_text_size" />
 
             <Switch
                 android:layout_width="wrap_content"
@@ -63,14 +63,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/height_settings_text"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:text="@string/text_share"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/second_screen_text_size" />
@@ -86,14 +86,14 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/height_settings_text"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:text="@string/text_support"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/second_screen_text_size" />
@@ -109,15 +109,15 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="61dp"
+            android:layout_height="@dimen/height_settings_text"
             android:gravity="center_vertical"
             android:orientation="horizontal">
 
             <TextView
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:layout_gravity="center_vertical"
+                android:layout_weight="1"
                 android:text="@string/text_user_agreement"
                 android:textColor="@color/text_black"
                 android:textSize="@dimen/second_screen_text_size" />
