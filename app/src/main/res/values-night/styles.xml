@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="DarkThemeSwitch">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+    <item name="android:layout_gravity">end|center_vertical</item>
+        <item name="android:thumbTint">?attr/colorControlActivated</item>
+        <item name="android:trackTint">?attr/colorSwitchThumbNormal</item>
+    <item name="android:checked">true</item>
+    </style>
+
+</resources>
