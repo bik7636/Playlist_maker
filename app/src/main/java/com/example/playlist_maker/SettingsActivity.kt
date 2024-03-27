@@ -5,6 +5,7 @@ import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Switch
 import android.widget.TextView
 import android.widget.Toast
@@ -15,7 +16,7 @@ class SettingsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
-        val backButton = findViewById<ImageButton>(R.id.backArrow)
+        val backButton = findViewById<ImageView>(R.id.backArrow)
         val shareButton = findViewById<TextView>(R.id.share_button)
         val supportButton = findViewById<TextView>(R.id.support_button)
         val agreementButton = findViewById<TextView>(R.id.agreement_button)
