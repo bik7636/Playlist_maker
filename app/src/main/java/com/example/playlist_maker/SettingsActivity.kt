@@ -1,5 +1,6 @@
 package com.example.playlist_maker
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
@@ -23,7 +24,23 @@ class SettingsActivity : AppCompatActivity() {
         val switchTheme = findViewById<Switch>(R.id.button_theme_switch)
 
         shareButton.setOnClickListener {
-            shareApp()
+            val linkAdress = getString(R.string.link_cours)
+            val shareIntent = Intent(Intent.ACTION_SEND).apply {
+                type = "text/plain"
+                putExtra(Intent.EXTRA_TEXT, linkAdress)
+            }
+
+            val shareChooser = Intent.createChooser(shareIntent, getString(R.string.send))
+
+            try {
+                startActivity(shareChooser)
+            } catch (_: ActivityNotFoundException) {
+                Toast.makeText(
+                    this@SettingsActivity,
+                    getString(R.string.application_missing_error),
+                    Toast.LENGTH_LONG
+                ).show()
+            }
         }
 
         supportButton.setOnClickListener {
@@ -52,14 +69,6 @@ class SettingsActivity : AppCompatActivity() {
             }
             recreate()
         }
-    }
-
-    private fun shareApp() {
-        val courseUrl = resources.getString(R.string.link_cours)
-        val intent = Intent(Intent.ACTION_SEND)
-        intent.type = "text/plain"
-        intent.putExtra(Intent.EXTRA_TEXT, courseUrl)
-        startActivity(Intent.createChooser(intent, "Выберите приложение:"))
     }
 
     private fun sendMail() {

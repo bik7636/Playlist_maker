@@ -23,24 +23,25 @@
 
     </LinearLayout>
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
             android:id="@+id/inputEditText"
-            style="@style/SearchBar"
-            android:layout_width="0dp"
-            android:layout_weight="1" />
+            style="@style/SearchBar" />
 
         <ImageView
-            android:id="@+id/clearIcon"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
+            android:id="@+id/clearIcon"
+            android:layout_gravity="end|center"
             android:layout_marginTop="12dp"
-            android:src="@android:drawable/ic_menu_close_clear_cancel"
+            android:paddingEnd="14dp"
+            android:src="@drawable/ic_close_clear_cancel"
             android:visibility="gone" />
-    </LinearLayout>
+
+
+    </FrameLayout>
 
 </LinearLayout>
