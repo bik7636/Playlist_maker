@@ -56,10 +56,6 @@ class SettingsActivity : AppCompatActivity() {
             finish()
         }
 
-        switchTheme.setOnClickListener {
-
-        }
-
         switchTheme.setOnCheckedChangeListener { buttonView, isChecked ->
 
             if (isChecked) {
@@ -78,15 +74,18 @@ class SettingsActivity : AppCompatActivity() {
 
         val intent = Intent(Intent.ACTION_SENDTO)
         intent.data = Uri.parse("mailto:")
-        intent.putExtra(Intent.EXTRA_EMAIL, recipientEmail)
         intent.putExtra(Intent.EXTRA_SUBJECT, subject)
+        intent.putExtra(Intent.EXTRA_EMAIL, recipientEmail)
         intent.putExtra(Intent.EXTRA_TEXT, messageBody)
 
-        if (intent.resolveActivity(packageManager) != null) {
+        try {
             startActivity(intent)
-        } else {
-            val errorMessage = resources.getString(R.string.application_missing_error)
-            Toast.makeText(this, errorMessage, Toast.LENGTH_SHORT).show()
+        } catch (_: ActivityNotFoundException) {
+            Toast.makeText(
+                this@SettingsActivity,
+                getString(R.string.application_missing_error),
+                Toast.LENGTH_LONG
+            ).show()
         }
     }
 
