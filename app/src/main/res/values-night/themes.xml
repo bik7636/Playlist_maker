@@ -1,7 +1,26 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
     <style name="Base.Theme.Playlist_maker" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+
+        <!-- Customize your night theme here. -->
+        <!-- status bar color -->
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:windowLightStatusBar">true</item>
+        <!-- Customize light theme -->
+        <item name="background">@color/black</item>
+        <!--  brand colors -->
+        <item name="colorPrimary">@color/white</item>
+        <item name="colorSecondary">@color/black</item>
+        <!-- light and dark shades of colors-->
+        <item name="colorPrimaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="colorSwitchThumbNormal">@color/light_blue</item>
+        <item name="colorControlActivated">@color/blue</item>
+
+        <!-- element colors -->
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="materialSearchBarStyle">@color/white</item>
+
     </style>
 </resources>
