@@ -6,4 +6,6 @@
     <dimen name="padding_icon_size">8dp</dimen>
     <dimen name="button_radius">16dp</dimen>
     <dimen name="height_settings_text">64dp</dimen>
+    <dimen name="standart_size_5">5dp</dimen>
+    <dimen name="cover_size">48dp</dimen>
 </resources>

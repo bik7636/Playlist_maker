@@ -11,16 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="horizontal"
-        android:layout_marginEnd="13dp"
-
         android:layout_marginVertical="8dp">
 
         <ImageView
             android:id="@+id/tv_cover_image"
-            android:layout_width="45dp"
-            android:layout_height="45dp"
+            android:layout_width="@dimen/cover_size"
+            android:layout_height="@dimen/cover_size"
             android:layout_gravity="center"
-            android:layout_marginStart="13dp"
             android:scaleType="centerCrop"
             tools:src="@drawable/nirvana" />
 
@@ -54,8 +51,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
-                    android:paddingStart="5dp"
-                    android:paddingEnd="5dp"
+                    android:paddingStart="@dimen/standart_size_5"
+                    android:paddingEnd="@dimen/standart_size_5"
                     android:src="@drawable/dot_image" />
 
                 <TextView
