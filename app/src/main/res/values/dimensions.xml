@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="main_text_size">22sp</dimen>
-    <dimen name="padding_icon_size">8dp</dimen>
+    <dimen name="artist_text_size">11sp</dimen>
     <dimen name="second_text_size">16sp</dimen>
+    <dimen name="padding_icon_size">8dp</dimen>
     <dimen name="button_radius">16dp</dimen>
     <dimen name="height_settings_text">64dp</dimen>
+    <dimen name="standart_size_5">5dp</dimen>
+    <dimen name="cover_size">48dp</dimen>
 </resources>

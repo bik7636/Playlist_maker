@@ -56,15 +56,16 @@ class SettingsActivity : AppCompatActivity() {
             finish()
         }
 
-        switchTheme.setOnCheckedChangeListener { buttonView, isChecked ->
+        /* это для себя, в следующиий раз удалю
+         switchTheme.setOnCheckedChangeListener { buttonView, isChecked ->
 
-            if (isChecked) {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
-            } else {
-                AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
-            }
-            recreate()
-        }
+             if (isChecked) {
+                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES)
+             } else {
+                 AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
+             }
+             recreate()
+         } */
     }
 
     private fun sendMail() {
